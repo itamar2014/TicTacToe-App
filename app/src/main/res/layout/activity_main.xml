@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A64CB53C"
+    android:backgroundTint="#A64CB53C"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/Selection"
+        android:layout_width="273dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="107dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/RBHVH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/human_vs_human"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/RBHVB"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="@string/human_vs_bot"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/XPlayerName"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/x_player"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/OPlayerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Selection" />
+
+    <EditText
+        android:id="@+id/ETTXName"
+        android:layout_width="105dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/ETTOName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/XPlayerName"
+        app:layout_constraintTop_toBottomOf="@+id/Selection"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/OPlayerName"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="208dp"
+        android:text="@string/o_player"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETTOName"
+        android:layout_width="105dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="601dp"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/XPlayerName"
+        app:layout_constraintTop_toBottomOf="@+id/Selection"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/StrGameBtn"
+        android:layout_width="119dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="402dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#D3C5CA"
+        android:onClick="startGame"
+        android:text="@string/start_game"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETTOName"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/About"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="244dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#D3C5CA"
+        android:onClick="ToastName"
+        android:text="@string/about"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

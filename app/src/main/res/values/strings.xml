@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TTCXOGame</string>
+    <string name="human_vs_human">Human Vs Human</string>
+    <string name="human_vs_bot">Human vs Bot</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="x_player">X Player</string>
+    <string name="o_player">O Player</string>
+    <string name="start_game">START GAME</string>
+    <string name="about">ABOUT</string>
+    <string name="turn">Turn:</string>
+    <string name="x">X:</string>
+    <string name="o">O:</string>
+    <string name="player_1_0">Player 1: 0</string>
+    <string name="player_2_0">Player 2: 0</string>
+    <string name="back">Back</string>
+</resources>
